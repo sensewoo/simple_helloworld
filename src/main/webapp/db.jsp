@@ -18,7 +18,7 @@ ResultSet rs = null;
 
 try {
 
-    String url = "jdbc:sqlserver://100.210.12.111:1433;DatabaseName=test";        // 사용하려는 데이터베이스명을 포함한 URL 기술
+    String url = "jdbc:sqlserver://10.210.12.111:1433;DatabaseName=test";        // 사용하려는 데이터베이스명을 포함한 URL 기술
     String username = "openshift";                                                    // 사용자 계정
     String pw = "p@ssw0rd";                                                // 사용자 계정의 패스워드
 
