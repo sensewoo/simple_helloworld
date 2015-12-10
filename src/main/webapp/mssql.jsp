@@ -21,8 +21,8 @@ try {
     String pw = "p@ssw0rd";                                                // 사용자 계정의 패스워드
     Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");                       // 데이터베이스와 연동하기 위해 DriverManager에 등록한다.
     conn = DriverManager.getConnection(url,username,pw);              // DriverManager 객체로부터 Connection 객체를 얻어온다.
-    String sql = "select * from [USER]";                        // sql 쿼리
-    pstmt = conn.prepareStatement(sql);                          // prepareStatement에서 해당 sql을 미리 컴파일한다.
+    String sql = "select * from [USER]";                          // sql 쿼리
+    pstmt = conn.prepareStatement(sql);                            // prepareStatement에서 해당 sql을 미리 컴파일한다.
     rs = pstmt.executeQuery();                                        // 쿼리를 실행하고 결과를 ResultSet 객체에 담는다.
     while (rs.next()) {                                                        // 결과를 한 행씩 돌아가면서 가져온다.
         String id = rs.getString("id");
