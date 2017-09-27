@@ -57,7 +57,7 @@ jboss-eap-*-maven-repository/org/jboss/spec/jboss-javaee-6.0
 			<build>
 				<finalName>jbosseap0001</finalName>
 				<plugins>
-					<plugin>
+	
 
 				</plugins>
 			</build>
